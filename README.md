@@ -1,5 +1,7 @@
 Hallo zusammen  
-Von nun an, werden wir hauptsächtlich über Git unsere Aufgaben austauschen.
+Von nun an werden wir hauptsächtlich über Git unsere Aufgaben austauschen.  
+Hier ist nun beschrieben, wie wir hauptsächlich miteinander Arbeiten werden.
+
 
 ## Arbeitsweise
 
