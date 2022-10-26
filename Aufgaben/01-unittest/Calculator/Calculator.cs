@@ -18,5 +18,10 @@ namespace Calculator
         {
             return factorA * factorB;
         }
+
+        public double Division(double valueA, double valueB)
+        {
+            return valueA / valueB;
+        }
     }
 }
