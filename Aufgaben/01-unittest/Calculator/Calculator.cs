@@ -13,5 +13,10 @@ namespace Calculator
         {
             return minuend - subtrahend;
         }
+
+        public int Multiply(int factorA, int factorB)
+        {
+            return factorA * factorB;
+        }
     }
 }

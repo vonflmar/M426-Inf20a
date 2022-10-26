@@ -37,6 +37,7 @@ namespace Calculator.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Fact]
         public void TestMultiplication()
         {
             // Arrange
