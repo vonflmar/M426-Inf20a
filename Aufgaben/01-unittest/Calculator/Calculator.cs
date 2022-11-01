@@ -19,9 +19,14 @@ namespace Calculator
             return faktor_1 * faktor_2;
         }
 
-        public double Divide(double number_1, double number_2)
+        public double Divide(double divisor_1, double divisor_2)
         {
-            return number_1 / number_2;
+            if (divisor_1 is 0 || divisor_2 is 0)
+            {
+                throw new ArgumentException();
+            }
+
+            return divisor_1 / divisor_2;
         }
     }
 }

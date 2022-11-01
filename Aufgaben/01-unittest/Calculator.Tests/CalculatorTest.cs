@@ -68,5 +68,17 @@ namespace Calculator.Tests
             // Then
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void TestDivideThroughZero()
+        {
+            // Given
+            double a = 20;
+            double b = 0;
+            Calculator calculator = new Calculator();
+
+            // Then
+            Assert.Throws<ArgumentException>(() => calculator.Divide(a, b));
+        }
     }
 }
