@@ -21,7 +21,12 @@ namespace Calculator
 
         public double Division(double valueA, double valueB)
         {
-            return valueA / valueB;
+            if(valueB == 0){
+                throw new ArgumentException();
+            }
+            else{
+                return valueA / valueB;
+            }
         }
     }
 }

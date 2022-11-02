@@ -68,5 +68,18 @@ namespace Calculator.Tests
             // Assert
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void TestDivisionZero()
+        {
+            // Arrange
+            int a = 6;
+            int b = 0;
+            Calculator calculator = new Calculator();
+
+            // Assert
+            Assert.Throws<ArgumentException>(() => calculator.Division(a, b));
+        }
+        
     }
 }
