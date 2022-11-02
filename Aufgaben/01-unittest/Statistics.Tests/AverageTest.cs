@@ -51,7 +51,7 @@ namespace Statistics.Tests
         [Fact]
         public void TestMedianForEvenNumbers()
         {
-            List<int> numbers = new List<int> { 2, 4, 5, 6 };
+            List<int> numbers = new List<int> { 2, 1, 5, 6 };
             double expected = 4.5;
             Average average = new Average();
 
