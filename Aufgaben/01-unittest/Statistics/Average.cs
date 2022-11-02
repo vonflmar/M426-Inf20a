@@ -25,14 +25,26 @@ namespace Statistics
             return mean;
         }
         public double Median(List<int> numbers){
-            int median = 0;
+            double median = 0;
             int halfAmount = numbers.Count / 2;
 
-            for(int i = 0; i < halfAmount; i++){
-                median = numbers[i];
+            if(numbers.Count == 0){
+                throw new ArgumentException();
             }
-
-            return median;
+            else if(halfAmount % 2 == 0){
+                for(int i = 0; i < halfAmount; i++){
+                    double first = numbers[i];
+                    double second = numbers[i + 1];
+                    median = (first + second) / 2;
+                }
+                return median;
+            }
+            else{
+                for(int i = 0; i < halfAmount; i++){
+                    median = numbers[i];
+                }
+                return median;
+            }
         }
     }
 }
