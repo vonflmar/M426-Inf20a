@@ -17,13 +17,10 @@ namespace Calculator
         }
 
         public int divide(int dividend, int divisor) {
-            int result = 0;
-            try{
-                result = dividend / divisor;
-            } catch(DivideByZeroException e) {
+            if(divisor == 0) {
                 throw new ArgumentException();
             }
-            return result;
+            return dividend / divisor;;
         }
     }
 }
