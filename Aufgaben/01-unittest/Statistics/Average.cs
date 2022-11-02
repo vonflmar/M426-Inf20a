@@ -19,15 +19,13 @@ namespace Statistics
                 sum += number;
             }
 
-            
-
             mean = (double)sum / numbers.Count;
             return mean;
         }
         public double Median(List<int> numbers){
             double median = 0;
             int halfAmount = numbers.Count / 2;
-            numbers = numbers.Sort()
+            numbers.Sort();
 
             if(numbers.Count == 0){
                 throw new ArgumentException();

@@ -32,7 +32,6 @@ namespace Statistics.Tests
         public void TestMeanOfNoNumbers()
         {
             List<int> numbers = new List<int> { };
-            double expected = 4.2;
             Average average = new Average();
 
             Assert.Throws<ArgumentException>(() => average.Mean(numbers));
@@ -52,7 +51,7 @@ namespace Statistics.Tests
         public void TestMedianForEvenNumbers()
         {
             List<int> numbers = new List<int> { 2, 1, 5, 6 };
-            double expected = 4.5;
+            double expected = 3.5;
             Average average = new Average();
 
             double actual = average.Median(numbers);
