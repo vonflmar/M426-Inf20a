@@ -5,7 +5,7 @@ namespace FooBarQix.Tests
     public class FooBarQixDeterminerTest
     {
         [Fact]
-        public void Determine()
+        public void TestIfNumberIsDividable()
         {
             //Arrange
             int input = 4;
