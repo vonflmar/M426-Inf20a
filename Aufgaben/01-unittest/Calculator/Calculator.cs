@@ -13,5 +13,20 @@ namespace Calculator
         {
             return minuend - subtrahend;
         }
+
+        public int Multiply(int factorA, int factorB)
+        {
+            return factorA * factorB;
+        }
+
+        public double Division(double valueA, double valueB)
+        {
+            if(valueB == 0){
+                throw new ArgumentException();
+            }
+            else{
+                return valueA / valueB;
+            }
+        }
     }
 }
