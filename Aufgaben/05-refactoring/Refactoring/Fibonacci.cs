@@ -4,6 +4,10 @@ public class Fibonacci
 {
     public static int Fib(int n)
     {
+        int previous = 0;
+        int current = 1;
+        int result = 0;
+
         if (n < 0)
         {
             throw new ArgumentException("Fibonacci undefined for negative numbers");
@@ -12,6 +16,12 @@ public class Fibonacci
         {
             return n;
         }
-        return Fib(n - 2) + Fib(n - 1);
+        for (int i = 1; i < n; i++)
+        {
+            result = previous + current;
+            previous = current;
+            current = result;
+        }
+        return result;
     }
 }
